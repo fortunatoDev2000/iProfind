@@ -1,0 +1,11 @@
+
+.container1 {
+    position:relative;
+    justify-content: center;
+}
+
+.cxdepesquisa {
+    border-radius: 30px;
+    width: 90%;
+    height: 20%;
+}
