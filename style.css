@@ -99,3 +99,22 @@ border-radius: 6vh;
 
 
 }
+
+
+.poscab {
+
+    width: 100vw;
+    height: 1.5vh;
+    justify-content: center;
+    display: flex;
+    margin-top: 0.3vh;
+    align-items: flex-start;
+}
+
+.botaolocal {
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1.4vh;
+    line-height: 1.4vh;
+}
