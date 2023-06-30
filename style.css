@@ -202,10 +202,12 @@ top: 50%;
         width: 55vw;
         height: 5vh;
         flex-shrink: 0;
-        padding-left: 7vw;
-        padding-right: 7vw;
+        padding-left: 4w;
+        padding-right: 10vw;
         font-size: 2vh;
         line-height: 4.5vh;
+        text-align: center;
+        text-indent: 6vw;
     }  
 
     .container1 ::-webkit-input-placeholder {
@@ -222,6 +224,16 @@ top: 50%;
 
     .anuncio {
         width: 94vw;
+    }
+
+    .imgabrirmenu {
+        height: 3.6vh;
+        top: 0vh;
+    }
+
+    .botaoperfilimg {
+
+        height: 4.8vh;
     }
 }
 
