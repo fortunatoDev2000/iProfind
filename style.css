@@ -248,7 +248,7 @@ top: 50%;
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
 
     .botaolocal {
         font-size: 1.6vh;
