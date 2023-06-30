@@ -139,3 +139,52 @@ margin-top: 0.5vh;
     border-radius: 2vh 0 2vh 0;
     background-color: #d9d9d9 ;
 }
+
+#janela-local {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.4vh);
+    z-index: 9999;
+}
+
+#conteudo-janela-local {
+position: relative;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+  padding: 5vh;
+  width: 60vw;
+  height: 40vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  border-radius: 4vh;
+
+}
+
+.fechada {
+
+    display: none;
+}
+
+#fechar-janela-local {
+    height: 2vh;
+    display: contents;
+    cursor: pointer;
+
+}
+
+.botao-fechar-j-l {
+
+    width: 2vh;
+    height: auto;
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+}
