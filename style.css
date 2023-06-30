@@ -13,6 +13,14 @@ cursor: pointer;
 display: contents;
 }
 
+.imgabrirmenu{
+    width: auto; 
+    height: 4vh;
+    top: 0.32vh; 
+    position: relative;
+}
+
+
 .container1 ::-webkit-input-placeholder {
     color: #000;
     font-size: 2.4vh;
@@ -20,7 +28,6 @@ display: contents;
     line-height: 5.8vh;
 
 }
-/*teste git*/
 
 .cxdepesquisa {
     width: 43vw;
@@ -187,4 +194,60 @@ top: 50%;
     position: absolute;
     top: 2vh;
     right: 2vh;
+}
+
+@media (max-width: 420px) {
+
+    .cxdepesquisa {
+        width: 55vw;
+        height: 4.5vh;
+        flex-shrink: 0;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        font-size: 2vh;
+        line-height: 4.5vh;
+    }  
+
+    .container1 ::-webkit-input-placeholder {
+        color: #000;
+        font-size: 2vh;
+        font-weight: 600;
+        line-height: 4.5vh;
+    
+    }
+
+    .imglupa {
+        height: 2.4vh;
+    }
+}
+
+
+@media (max-width: 350px) {
+
+    .cxdepesquisa {
+        padding-left: 11vw;
+        padding-right: 11vw;
+        width: 40vw;
+    }
+
+    .botaoperfilimg {
+        height: 5vh;
+    }
+
+    .botaoperfil {
+        height: 5vh;
+    }
+
+    .imgabrirmenu {
+        height: 3.5vh;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .botaolocal {
+        font-size: 1.6vh;
+    }
+
 }
