@@ -196,11 +196,11 @@ top: 50%;
     right: 2vh;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 420px), (orientation: portrait) {
 
     .cxdepesquisa {
         width: 55vw;
-        height: 4.5vh;
+        height: 5vh;
         flex-shrink: 0;
         padding-left: 7vw;
         padding-right: 7vw;
@@ -218,6 +218,10 @@ top: 50%;
 
     .imglupa {
         height: 2.4vh;
+    }
+
+    .anuncio {
+        width: 94vw;
     }
 }
 
