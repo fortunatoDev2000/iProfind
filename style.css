@@ -14,6 +14,7 @@ width: auto;
 height: 4vh;
 background-color: transparent;
 border: none;
+cursor: pointer;
 }
 
 
@@ -48,6 +49,7 @@ border: none;
 .alinharbotao {
     position: relative;
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -57,7 +59,7 @@ border: none;
   border: none;
   padding: 0;
   margin: 0;
-    
+    cursor: pointer;
 }
 
 .imglupa {
@@ -73,7 +75,7 @@ border: none;
   margin: 0;
 }
 
-.botaoperfil {
+.containerbtperfil {
     position: relative;
     display: flex;
     align-items: center;
@@ -82,13 +84,14 @@ border: none;
 
 }
 
-.botaoperfilfilho {
+.botaoperfil {
     background: none;
     border: none;
     padding: 0;
     margin: 0;
     width: auto;
     height: 6vh;
+    cursor: pointer;
 
 }
 
@@ -117,4 +120,6 @@ border-radius: 6vh;
     font-weight: 600;
     font-size: 1.4vh;
     line-height: 1.4vh;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
