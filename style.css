@@ -22,7 +22,7 @@ cursor: pointer;
 
 .container1 ::-webkit-input-placeholder {
     color: #000;
-    font-size: 2.8vh;
+    font-size: 2.4vh;
     font-weight: 600;
     line-height: 5.8vh;
 
@@ -41,7 +41,7 @@ cursor: pointer;
     padding-right: 4.5vw;
     
     text-align: center;
-    font-size: 2.8vh;
+    font-size: 2.4vh;
     line-height: 5.8vh;
 }
 
@@ -110,7 +110,7 @@ border-radius: 6vh;
     height: 1.5vh;
     justify-content: center;
     display: flex;
-    margin-top: 0.3vh;
+    margin-top: 0.5vh;
     align-items: flex-start;
 }
 
@@ -118,8 +118,24 @@ border-radius: 6vh;
     border: none;
     background: none;
     font-weight: 600;
-    font-size: 1.4vh;
-    line-height: 1.4vh;
+    font-size: 1.3vh;
+    line-height: 1.3vh;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.containeranuncio {
+width: 100vw;
+height: 20vh;
+display: flex;
+justify-content: center;
+margin-top: 0.5vh;
+}
+
+.anuncio {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    border-radius: 2vh 0 2vh 0;
+    background-color: #d9d9d9 ;
 }
