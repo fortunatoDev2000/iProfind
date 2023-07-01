@@ -124,6 +124,11 @@ border-radius: 6vh;
     align-items: flex-start;
 }
 
+.gpsicon {
+    height: 1vh;
+    width: auto;
+}
+
 .botaolocal {
     border: none;
     background: none;
@@ -145,7 +150,7 @@ margin-top: 0.5vh;
     width: 80vw;
     height: 20vh;
     display: flex;
-    border-radius: 2vh 0 2vh 0;
+    border-radius: 2vh 2vh 2vh 2vh;
     background-color: #d9d9d9 ;
 }
 
@@ -335,123 +340,6 @@ height: 2vh;
 
 }
 
-@media (orientation: landscape) {
-    .buttonsmenu {
-        font-size: 3vh;
-        padding: 2vh 0 2vh 3vh;
-        border-bottom: solid 0.1vh;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-    }
-
-    #nomeusuario {
-        font-size: 3vh;
-        margin-top: 3vh;
-    }
-
-    #cargousuario {
-        font-size: 2.2vh;
-    }
-
-    #verperfil {
-        font-size: 2.2vh;
-        color: #7e7e7e;
-    }
-
-    .botaoperfilimg2 {
-        height: 8vh;
-        margin: 2vh 2vh 2vh 2vh;
-    }
-
-    .iconsmenu {
-        height: 3vh;
-    }
-
-    .menu1 {
-        height: 15vh;
-        margin-bottom: 0;
-        padding-bottom: 4vh;
-        border-bottom: solid 0.1vh;
-    }
-
-    #conteudo-janela-menu {
-        width: 35%;
-        left: -17.5%;
-    }
-
-    @keyframes slide-in {
-        0% {left: -17.5%}
-        100% {left: 17.5%}
-    }
-
-    @keyframes slide-out {
-        0% {left: 17.5%}
-        100% {left: -17.5%}
-    }
-
-}
-
-@media (max-width: 420px), (orientation: portrait) {
-
-    .poscab {
-        margin-top: 0.18vh;
-    }
-
-    .cxdepesquisa {
-        width: 55vw;
-        height: 5vh;
-        flex-shrink: 0;
-        padding-left: 4w;
-        padding-right: 10vw;
-        font-size: 2vh;
-        line-height: 4.5vh;
-        text-align: center;
-        text-indent: 6vw;
-    }  
-
-    .container1 ::-webkit-input-placeholder {
-        color: #000;
-        font-size: 2vh;
-        font-weight: 600;
-        line-height: 4.5vh;
-    
-    }
-
-    .imglupa {
-        height: 2.4vh;
-    }
-
-    .anuncio {
-        width: 94vw;
-    }
-
-    .imgabrirmenu {
-        height: 3.6vh;
-        top: 0vh;
-    }
-
-    .botaoperfilimg {
-
-        height: 5vh;
-    }
-
-    .botaoperfil {
-        height: 5vh;
-    }
-}
-
-
-
-
-@media (min-width: 900px) and (orientation: landscape) {
-
-    .botaolocal {
-        font-size: 1.6vh;
-    }
-
-}
-
 .page-login {
     width: 100%;
     height: 97vh;
@@ -568,7 +456,222 @@ justify-content:left;
     cursor: pointer;
 }
 
+.container-categorias {
 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+    
+.cat-imgs {
+    height: 6.5vh;
+    width: 6.5vh;
+    background-color: #d9d9d9;
+    border-radius: 5vh;
+}
+
+.catbox {
+    font-size: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0.5vh 1vh 0.5vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-feed {
+    display: flex;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    border-radius: 2vh 0 2vh 0;
+    width: 94vw;
+    height: 35vh;
+    margin-bottom: 2vh;
+}
+
+.info-user-feed {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 25%;
+}
+
+.perfil-feed-img {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 3vh;
+    background-color: #b1b1b1;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vh;
+}
+
+.username-feed-post {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vh;
+
+}
+
+.prof-feed-post {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vh;
+}
+
+.info-feed-post {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+    .buttonsmenu {
+        font-size: 3vh;
+        padding: 2vh 0 2vh 3vh;
+        border-bottom: solid 0.1vh;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .cat-imgs {
+        height: 8.5vh;
+        width: 8.5vh;
+    }
+
+    .catbox {
+        font-size: 1.6vh;
+        margin: 1vh 2.5vh 1vh 2.5vh;
+
+    }
+
+    .post-feed {
+        width: 80vw;
+    }
+
+    #nomeusuario {
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+
+    #cargousuario {
+        font-size: 2.2vh;
+    }
+
+    #verperfil {
+        font-size: 2.2vh;
+        color: #7e7e7e;
+    }
+
+    .botaoperfilimg2 {
+        height: 8vh;
+        margin: 2vh 2vh 2vh 2vh;
+    }
+
+    .iconsmenu {
+        height: 3vh;
+    }
+
+    .menu1 {
+        height: 15vh;
+        margin-bottom: 0;
+        padding-bottom: 4vh;
+        border-bottom: solid 0.1vh;
+    }
+
+    #conteudo-janela-menu {
+        width: 35%;
+        left: -17.5%;
+    }
+
+    @keyframes slide-in {
+        0% {left: -17.5%}
+        100% {left: 17.5%}
+    }
+
+    @keyframes slide-out {
+        0% {left: 17.5%}
+        100% {left: -17.5%}
+    }
+
+}
+
+@media (max-width: 420px), (orientation: portrait) {
+
+    .poscab {
+        margin-top: 0.18vh;
+    }
+
+    .cxdepesquisa {
+        width: 55vw;
+        height: 5vh;
+        flex-shrink: 0;
+        padding-left: 4w;
+        padding-right: 10vw;
+        font-size: 2vh;
+        line-height: 4.5vh;
+        text-align: center;
+        text-indent: 6vw;
+    }  
+
+    .container1 ::-webkit-input-placeholder {
+        color: #000;
+        font-size: 2vh;
+        font-weight: 600;
+        line-height: 4.5vh;
+    
+    }
+
+    .imglupa {
+        height: 2.4vh;
+    }
+
+    .anuncio {
+        width: 94vw;
+    }
+
+    .imgabrirmenu {
+        height: 3.6vh;
+        top: 0vh;
+    }
+
+    .botaoperfilimg {
+
+        height: 5vh;
+    }
+
+    .botaoperfil {
+        height: 5vh;
+    }
+}
 
 @media (max-width: 800px), (orientation: portrait) {
     .conteudo-box-login {
@@ -598,4 +701,11 @@ justify-content:left;
         margin-bottom: 3vh;
     }
     }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+
+        .botaolocal {
+            font-size: 1.6vh;
+        }
     
+        }
