@@ -97,6 +97,7 @@ display: contents;
     width: auto;
     height: 6vh;
     cursor: pointer;
+    display: contents;
 
 }
 
@@ -295,6 +296,78 @@ height: 2vh;
     margin-bottom: 2vh;
 }
 
+#nomeusuario {
+    font-size: 2vh; 
+    font-weight: 600;
+    margin: 1vh 0 0 0;
+}
+
+#cargousuario {
+    font-size: 1.5vh;
+}
+
+#verperfil {
+    font-size: 1.3vh; 
+    color: #7e7e7e;
+}
+
+.div-info-usuario {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    padding-top: 1vh;
+}
+
+.botaoperfilimg2 {
+    width: auto;
+    height: 5vh;
+    border-radius: 6vh;
+    padding: 2vh 2vh 1vh 2vh;
+
+
+}
+
+@media (orientation: landscape) {
+    .buttonsmenu {
+        font-size: 3vh;
+        padding: 2vh 0 2vh 3vh;
+        border-bottom: solid 0.1vh;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    #nomeusuario {
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+
+    #cargousuario {
+        font-size: 2.2vh;
+    }
+
+    #verperfil {
+        font-size: 2.2vh;
+        color: #7e7e7e;
+    }
+
+    .botaoperfilimg2 {
+        height: 8vh;
+        margin: 2vh 2vh 2vh 2vh;
+    }
+
+    .iconsmenu {
+        height: 3vh;
+    }
+
+    .menu1 {
+        height: 15vh;
+        margin-bottom: 0;
+        padding-bottom: 4vh;
+        border-bottom: solid 0.1vh;
+    }
+
+}
 
 @media (max-width: 420px), (orientation: portrait) {
 
@@ -425,9 +498,6 @@ border-radius: 10px;
     margin-bottom: 3vh;
 }
 
-#input-email {
-   
-}
 
 .desc-input-login {
     font-family: Arial, Helvetica, sans-serif;
