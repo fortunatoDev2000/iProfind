@@ -1,6 +1,7 @@
 .body-page-inicial {
     opacity: 0;
     animation: fade-in 0.4s forwards;
+    margin: 0.8vh;
 }
 
 
@@ -374,6 +375,21 @@ height: 2vh;
         border-bottom: solid 0.1vh;
     }
 
+    #conteudo-janela-menu {
+        width: 35%;
+        left: -17.5%;
+    }
+
+    @keyframes slide-in {
+        0% {left: -17.5%}
+        100% {left: 17.5%}
+    }
+
+    @keyframes slide-out {
+        0% {left: 17.5%}
+        100% {left: -17.5%}
+    }
+
 }
 
 @media (max-width: 420px), (orientation: portrait) {
@@ -417,31 +433,15 @@ height: 2vh;
 
     .botaoperfilimg {
 
-        height: 4.8vh;
-    }
-}
-
-
-@media (max-width: 350px) {
-
-    .cxdepesquisa {
-        padding-left: 11vw;
-        padding-right: 11vw;
-        width: 40vw;
-    }
-
-    .botaoperfilimg {
         height: 5vh;
     }
 
     .botaoperfil {
         height: 5vh;
     }
-
-    .imgabrirmenu {
-        height: 3.5vh;
-    }
 }
+
+
 
 
 @media (min-width: 900px) and (orientation: landscape) {
@@ -490,6 +490,11 @@ border-radius: 10px;
 
 .inputs-login {
     font-size: 2.57vh;
+    width: 22.7vh;
+    height: 3vh;
+    border-radius: 0.5vh;
+    border: solid 0.2vh #747474;
+
 }
 
 
@@ -519,10 +524,12 @@ border-radius: 10px;
     background-color: #b7b7b7;
     border-radius: 0.5vh;
     width: -webkit-fill-available;
+    height: 3.5vh;
     border: solid 0.2vh #747474;
     font-family: Arial, Arial, Helvetica, sans-serif;
     cursor: pointer;
     font-size: 2.57vh;
+    
 }
 
 .button-entrar:hover {
@@ -574,6 +581,9 @@ justify-content:left;
         width: 22.7vh;
         height: 3vh;
         font-size: 2vh;
+        border-radius: 0.5vh;
+        border: solid 0.2vh #747474;
+    
     }
     
     .button-entrar {
