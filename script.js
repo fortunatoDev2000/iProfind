@@ -46,3 +46,5 @@ buttonInicio.addEventListener('click', function() {
 });
 //adiciona ainteração ao botão de inicio//
 
+
+
