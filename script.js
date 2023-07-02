@@ -44,5 +44,5 @@ const buttonInicio = document.getElementById('button-inicio')
 buttonInicio.addEventListener('click', function() {
   window.location.href = 'iProfind.html';
 });
-//adiciona ainteração ao botão de inicio//
+//adiciona a interação ao botão de inicio//
 
