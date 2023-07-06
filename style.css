@@ -5,6 +5,9 @@
 }
 
 
+.blur-effect {
+    filter: blur(0.2vh);
+}
 
 .cabecalho {
 
@@ -509,6 +512,7 @@ justify-content:left;
     width: 25%;
 }
 
+
 .perfil-feed-img {
     height: 4vh;
     width: 4vh;
@@ -623,6 +627,8 @@ p {
     }
 
 }
+
+
 
 @media (max-width: 420px), (orientation: portrait) {
 
