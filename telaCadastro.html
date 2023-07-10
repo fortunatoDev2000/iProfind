@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>iProfind: Cadastro</title>
+</head>
+<body class="telaCadastro">
     <div class="page-login">
         <div id="conteudo-box-login" class="conteudo-box-login">
             <div style="display: contents;">
@@ -10,23 +16,23 @@
                 </a>
             </div>
             <div class="logo-iProfind">iProfind</div>
-            <div class="msg-bem-vindo">Bem vindo ao <span style="font-weight: 600;">iProfind</span>.</div>
-            <form>
+            <div class="msg-bem-vindo">Crie sua conta no <span style="font-weight: 600;">iProfind</span>.</div>
+            <form id="formSignUp">
                 <div class="desc-input-login">
-                    <input type="text" id="input-email" placeholder="Email" class="inputs-login">
+                    <input type="text" id="newName" placeholder="Nome" class="inputs-login" pattern="[A-Za-z]{3,}" required>
                 </div>
-               <div class="desc-input-login">
-                    <input type="password" name="senha" id="input-senha" placeholder="Senha" class="inputs-login">
+                <div class="desc-input-login">
+                    <input type="email" id="newEmail" placeholder="Email" class="inputs-login" required>
+                </div>
+                <div class="desc-input-login">
+                    <input type="password" id="newPassword" placeholder="Senha" class="inputs-login" required>
                 </div>
                 <div>
-                    <button type="submit" class="button-entrar">Entrar</button>
+                    <button type="submit" id="buttonCadastrar" class="button-entrar">Cadastrar</button>
                 </div>
             </form>
-            <div class="esqueci-box">
-            <a class="esqueci">Esqueci minha senha</a>
-            </div>
-            <div style="margin-top: 3vh;">
-                <a class="criar-conta">Criar conta</a>
+            <div style="margin-top: 4vh;">
+                <a href="telaLogin.html" class="criar-conta">Já tenho conta</a>
             </div>
             <a class="duvida-login">
                 <img src="assets/duvida.png" class="duvida-login-img">
@@ -37,6 +43,6 @@
 
 
     </div>
-    <script src="scriptTelaLogin.js"></script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>

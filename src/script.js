@@ -1,5 +1,47 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+
+//firebase config//
+const firebaseConfig = {
+  apiKey: "AIzaSyA6KhIhp3NccTQaX2utvHaq-dfXbpb7_2U",
+  authDomain: "iprofind.firebaseapp.com",
+  projectId: "iprofind",
+  storageBucket: "iprofind.appspot.com",
+  messagingSenderId: "278252027782",
+  appId: "1:278252027782:web:4284d9c993bf67818ab607",
+  measurementId: "G-LHNGXD5M6N"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+
+
+//Inicia o código da pagina inicial
+if (document.body.classList.contains('body-page-inicial')) {
+
+  const auth = getAuth(app);
+
+  document.getElementById('botaoPerfil').addEventListener('click', function(){
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        // O usuário está autenticado, permita o acesso ào perfil
+        window.location.href = "perfil.html";
+      } else {
+        // O usuário não está autenticado, redirecione-o para a página de login
+        window.location.href = "telaLogin.html";
+      }
+    });
+  })
+ 
+
+
+
 
 
 
@@ -86,23 +128,36 @@ buttonInicio.addEventListener('click', function() {
   window.location.href = 'iProfind.html';
 });
 //adiciona a interação ao botão de inicio//
+}
 
 
 
-//firebase config//
-const firebaseConfig = {
-  apiKey: "AIzaSyA6KhIhp3NccTQaX2utvHaq-dfXbpb7_2U",
-  authDomain: "iprofind.firebaseapp.com",
-  projectId: "iprofind",
-  storageBucket: "iprofind.appspot.com",
-  messagingSenderId: "278252027782",
-  appId: "1:278252027782:web:4284d9c993bf67818ab607",
-  measurementId: "G-LHNGXD5M6N"
-};
-
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 
+//Inicia a parte do codigo da tela de cadastro
 
+if (document.body.classList.contains('telaCadastro')) {
+
+const auth = getAuth(app);
+
+document.getElementById('formSignUp').addEventListener('submit', function(){
+  const email = document.getElementById('newEmail').value
+const password = document.getElementById('newPassword').value
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    window.location.href = "iProfind.html";
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+    alert(errorMessage)
+  });
+})
+
+}
 
